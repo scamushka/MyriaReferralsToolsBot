@@ -95,18 +95,19 @@ async function init() {
     console.log('Author: https://t.me/scamushka');
     const index = selectAction();
 
-    if (index === 0) {
-      await addReferrals();
-    } else if (index === 1) {
-      await doSocialTasks();
-    } else if (index === 2) {
-      await claimAllRewards();
-    } else {
-      console.log('Bye-Bye!');
+    switch (index) {
+      case 0:
+        await addReferrals();
+        break;
+      case 1:
+        await doSocialTasks();
+        break;
+      case 2:
+        await claimAllRewards();
+        break;
+      default:
+        console.log('Bye-Bye!');
     }
-  } catch (e) {
-    logger.fatal(e.message);
-  }
 }
 
 init();
