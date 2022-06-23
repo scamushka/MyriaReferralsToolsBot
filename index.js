@@ -108,6 +108,9 @@ async function init() {
       default:
         console.log('Bye-Bye!');
     }
+  } catch (e) {
+    logger.fatal(e.message);
+  }
 }
 
 init();
