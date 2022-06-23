@@ -34,8 +34,8 @@ export function parseCookies(res) {
 
 export async function handleError(e, fName, f, ...args) {
   if (e instanceof HttpRateLimitOrOtherError) {
-    logger.error(`Try again ${fName} in 60s = ${e.message}`);
-    await setTimeout(60000);
+    logger.error(`Try again ${fName} in 90s = ${e.message}`);
+    await setTimeout(90000);
     const result = await f(...args);
 
     return result;
