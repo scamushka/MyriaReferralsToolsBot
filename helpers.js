@@ -3,7 +3,7 @@ import { setTimeout } from 'timers/promises';
 import fs from 'fs/promises';
 import HttpRateLimitOrOtherError from './errors/HttpRateLimitOrOtherError.js';
 import HttpServerStatusError from './errors/HttpServerStatusError.js';
-import logger from './logger.cjs';
+import logger from './logger.js';
 
 const chance = Chance();
 
