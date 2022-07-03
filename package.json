@@ -1,5 +1,5 @@
 {
-  "name": "myria",
+  "name": "myria-bot",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
     "node-fetch": "^3.2.6",
     "pino": "^8.1.0",
     "readline-sync": "^1.4.10",
-    "user-agents": "^1.0.1055",
+    "user-agents": "^1.0.1066",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
