@@ -1,10 +1,10 @@
-// ! опять не ts ;/
+// ! опять не ts :/
 import readlineSync from 'readline-sync';
 import { validate as uuidValidate } from 'uuid';
 import fs from 'fs/promises';
 import { ethers } from 'ethers';
 import InvalidEmailError from './errors/InvalidEmailError.js';
-import logger from './logger.cjs';
+import logger from './logger.js';
 import { createAccounts, doTasks, claimRewards } from './methods.js';
 import InvalidPrivateKeyError from './errors/InvalidPrivateKeyError.js';
 
