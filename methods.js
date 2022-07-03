@@ -4,7 +4,7 @@ import { ethers } from 'ethers';
 import {
   parseAsJson, checkStatus, parseCookies, handleError, getRandomAlliance, getRandomAccount, addAccountToFile, deleteEmailFromFile,
 } from './helpers.js';
-import logger from './logger.cjs';
+import logger from './logger.js';
 
 async function logIn(wallet) {
   try {
